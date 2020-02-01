@@ -1,0 +1,12 @@
+name: SignEdit
+version: ${project.version}
+main: cz.hydracore.signedit.SignEdit
+api-version: 1.13
+authors: [Sam]
+description: Plugin for editing signs.
+website: https://hydracore.eu/
+
+commands:
+  sge:
+  sgcp:
+  sgpst:
