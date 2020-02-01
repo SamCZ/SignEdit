@@ -92,8 +92,10 @@ public final class SignEdit extends JavaPlugin implements Listener {
         String lineStr = "";
 
         for (int i = 1; i < args.length; i++) {
-            lineStr += args[i];
+            lineStr += args[i] + " ";
         }
+
+        lineStr = lineStr.substring(0, lineStr.length()-1);
 
         sign.setLine(lineIndex, ChatColor.translateAlternateColorCodes('&', lineStr));
 
@@ -178,7 +180,6 @@ public final class SignEdit extends JavaPlugin implements Listener {
         Sign sign = (Sign) block.getState();
 
         for (int i = 0; i < 4; i++) {
-            System.out.println(sign.getLine(i));
             sign.setLine(i, ChatColor.translateAlternateColorCodes('&', sign.getLine(i)));
         }
 
@@ -193,7 +194,6 @@ public final class SignEdit extends JavaPlugin implements Listener {
         Sign sign = (Sign) block.getState();
 
         for (int i = 0; i < 4; i++) {
-            System.out.println(sign.getLine(i));
             sign.setLine(i, ChatColor.translateAlternateColorCodes('&', sign.getLine(i)));
         }
 
